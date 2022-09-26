@@ -1,0 +1,4 @@
+Terminal App on Mac
+git version 2.32.1 (Apple Git-133)
+NodeJs 18.8.0 (includes npm 8.18.0)
+Text Editor Visual Studio Code Version: 1.65.1 (Universal)
