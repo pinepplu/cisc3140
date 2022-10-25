@@ -12,21 +12,23 @@ public class dates {
         LocalDate lab2 = LocalDate.of(2022, 10, 26);
         LocalDate lab3 = LocalDate.of(2022,11, 23);
         LocalDate lab4 = LocalDate.of(2022, 12, 7);
-        /*
+        System.out.println("lab 1: " + lab1 + "\nlab 2: " + lab2 +
+        "\nlab 3: " + lab3 + "\nlab 4: " + lab4);
         //allow user to input dates
         Scanner input = new Scanner(System.in);
-        //boolean date = input.hasNext("MMDDYYYY");
+        //String user = input.next("MMDDYYYY");
         System.out.println("input date(MMDDYYYY): ");
-        while(input.hasNextLong()) {
-            //System.out.println("days until due date: " + daysBetweenDates(now, date) + " days");
-        }
+        while (input.hasNext("MMDDYYYY")) {
+            //check if input matches pattern else print error message
+            if(input.hasNext("MMDDYYYY")) {
+                System.out.println("date: " + input);
+            } else {
+                System.out.println("ERROR: date in wrong format");
+            }
+            //display(daysBetweenDates(now, user));
+        } 
         input.close();
-         */
-        //display
-        display(daysBetweenDates(now, lab1));
-        display(daysBetweenDates(now, lab2));
-        display(daysBetweenDates(now, lab3));
-        display(daysBetweenDates(now, lab4));
+        //output file, use printwriter
     }
     /**
      * method calculates number of days between 2 dates
