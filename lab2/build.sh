@@ -1,2 +1,2 @@
 #!/bin/bash
-javac dates.java
+javac dates.java > outputdates.txt
